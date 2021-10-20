@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Covid-19 | Your one stop for everything related to Covid19
+    </title>
+
+   
+    <!-- links including fonts and third part library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="assets/media/cdc-w9KEokhajKw-unsplash.ico"
+      type="image/ico"
+    />
+
+    <!-- chart js CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  </head>
+
+  <body onload="loader()">
+    <div id="loading"></div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-chevron-circle-up"></i>
+    </button>
+    <!-- nav bar starts here  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-gray">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Fight against Covid19</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html"
+              >Home<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./symptoms.html">Symptoms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./treatment.html">Treatments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hero figure starts here  -->
+    <div class="container-fluid hero-figure">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content">
+            <h1>
+              Lets fight against Covid19
+              <span
+                style="
+                  color: #fff;
+                  background-color: #b8255f !important;
+                  border-radius: 25px;
+                  padding: 4px 7px;
+                "
+                id="hero-figure-text"
+                >Together</span
+              >.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!-- hero figure ends here  -->
+
+    <!-- stat content starts here  -->
+    <div class="container">
+      <div class="stat-content">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <h2 class="heading text-center">Our Objective</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row align-items-center incidence-rates">
+          <div class="col-md-6 align-items-center" data-aos="fade-up">
+            <h3>Spreading awareness</h3>
+            <p>
+              We believe in unity thats why we are here to unite so that we can
+              fight against this severe disease
+            </p>
+          </div>
+          <div class="col-md-6 text-center" data-aos="fade-left">
+            <img
+              src="assets/media/i1.jfif"
+              alt="Awareness"
+              height="300vh"
+              width="100%"
+            />
+          </div>
+        </div>
+        <br />
+        <br />
+        <hr>
+        <br />
+        <br />
+        <div class="row align-items-center age-risk">
+          <div class="col-md-6 text-center" data-aos="fade-right">
+            <img
+              src="assets/media/i2.jfif"
+              alt="Awareness"
+              height="300vh"
+              width="100%"
+            />
+          </div>
+          <div class="col-md-6 align-items-center" data-aos="fade-up">
+            <h3>Informing various Symptoms of Covid19</h3>
+            <p>
+              According to
+              <a
+                target="_blank"
+                href="https://www.who.int/health-topics/coronavirus#tab=tab_3"
+                >WHO</a
+              >
+              we also share some of the important symptoms of novel coronavirus
+            </p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <hr>
+        <br />
+        <br />
+        <div class="row align-items-center cancer-frequency">
+          <div class="col-md-6 align-items-center" data-aos="fade-up">
+            <h3>Treatments</h3>
+            <p>
+              Also we share some of the treatments which was prescribed by WHO
+            </p>
+          </div>
+          <div class="col-md-6 text-center" data-aos="fade-left">
+            <img
+              src="assets/media/i3.jfif"
+              alt="roll over map for country incident rates"
+              height="300vh"
+              width="100%"
+            />
+          </div>
+        </div>
+        <hr>
+    <!-- stat content ends here  -->
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6"></div>
+            <div class="col-xs-6 col-md-3"></div>
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li>
+                  <a href="./index.html">Home <i class="fas fa-home"></i></a>
+                </li>
+                <li>
+                  <a href="./symptoms.html"
+                    >Symptoms <i class="fas fa-stethoscope"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="./treatment.html"
+                    >Treatment <i class="fas fa-hospital"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="./contact.html"
+                    >Contact <i class="fas fa-phone-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <a href="./index.html">Covid-19 Awareness. </a>.
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+            
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- js tags  -->
+    <script>
+      var preloader = document.getElementById("loading");
+      setTimeout(function loader() {
+        preloader.style.display = "none";
+      }, 1000);
+      
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700
+      });
+    </script>
+    <script
+  </body>
+</html>

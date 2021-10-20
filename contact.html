@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Contact Us | Covid-19 Awareness</title>
+
+
+<!-- links including fonts and third part library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/treatment.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap">
+
+  <!-- favicon  -->
+  <link rel="icon" href="assets/media/pink-ribbon-logo-png-transparent-719x899.ico" type="image/ico">
+  
+  <!-- Jquery CDN  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+
+<style>
+  /* splash screen css starts here  */
+  #loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255) url("/assets/media/pre.gif") no-repeat center center;
+    z-index: 99999;
+  }
+  /* splash screen css ends here  */
+</style>
+
+</head>
+
+<body onload="loader()">
+  <div id="loading"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-gray">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Covid-19 Awareness</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./symptoms.html">Symptoms</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="./treatment.html">Treatments</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <center><h1>Authentication</h1></center>
+    <div id="sawo-container" style="height: 300px; width: 300px; margin:0 auto">   
+    </div>
+    <hr>
+    <div class="contact text-center">
+      <h2>Fill up this form to get a call back from our Doctor.</h2>
+      <p style="color: red;">*THIS FORM WILL WORK BUT ISN'T REAL!</p>
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <form action="" name="contact" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true">
+            <p class="hidden" style="visibility: hidden; z-index: -100; position: absolute">
+              <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+            </p>
+            <input type="text" class="form-control" name="firstName" placeholder="First Name">
+            <br>
+            <input type="text" class="form-control" name="lastName" placeholder="Last Name">
+            <br>
+            <input type="tel" class="form-control" name="phonenumber" placeholder="Phone Number" min=10 max=12 name="" id="">
+            <br>
+            <input type="email" name="emailID" id="" class="form-control" placeholder="Email">
+            <br>
+            <label for="" class="float-left"> Choose a file to upload(optional):</label>
+            <input type="file" id="myFile" name="filename" class="float-left" >
+            <label for="" class="float-left" style="margin-bottom: 5vh;">Don't upload file greater than 1MB.</label>
+            <br>
+            <textarea name="textarea" id="" cols="45" rows="5" class="form-control" placeholder="Write your problem here..."></textarea>
+            <br>
+            <div data-netlify-recaptcha="true"></div>
+            <br>
+            <button type="submit" class="btn btn-success btn-lg float-right"">Submit</button>
+          </form>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+
+    <br>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="./index.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="./symptoms.html">Symptoms <i class="fas fa-stethoscope"></i></a></li>
+                <li><a href="./treatment.html">Treatment <i class="fas fa-hospital"></i></a></li>
+                <li><a href="./contact.html">Contact <i class="fas fa-phone-square"></i></a></li>
+        
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+  
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- footer ends here -->
+
+    <!-- JS files  -->
+    <script>
+    var preloader = document.getElementById("loading");
+      setTimeout(function loader() {
+        preloader.style.display = "none";
+      }, 1000);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>    
+<script>
+    var config = {
+        // should be same as the id of the container created on 3rd step
+        containerID: "sawo-container",
+        // can be one of 'email' or 'phone_number_sms'
+        identifierType: "phone_number_sms",
+        // Add the API key copied from 2nd step
+        apiKey: "aa18d68d-4908-4dda-a650-ddb911fc2593",
+        // Add a callback here to handle the payload sent by sdk
+        onSuccess: (payload) => {
+            console.log(payload)
+        },
+    };
+    var sawo = new Sawo(config);
+    sawo.showForm();
+</script>
+</body>
+</html>
